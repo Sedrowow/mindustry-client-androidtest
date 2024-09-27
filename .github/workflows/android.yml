@@ -21,7 +21,7 @@ jobs:
         distribution: 'zulu'
         java-version: '11'
 
-        - name: Download and set up Android SDK
+    - name: Download and set up Android SDK
       run: |
         sudo apt-get update
         sudo apt-get install -y wget unzip
