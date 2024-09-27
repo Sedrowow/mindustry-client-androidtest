@@ -21,14 +21,15 @@ jobs:
         distribution: 'zulu'
         java-version: '11'
 
-    - name: Download and set up Android SDK
+        - name: Download and set up Android SDK
       run: |
         sudo apt-get update
         sudo apt-get install -y wget unzip
         wget https://dl.google.com/android/repository/commandlinetools-linux-8092744_latest.zip
         unzip commandlinetools-linux-8092744_latest.zip -d $HOME/android-sdk
         mkdir -p $HOME/android-sdk/cmdline-tools/latest
-        mv $HOME/android-sdk/cmdline-tools/* $HOME/android-sdk/cmdline-tools/latest
+        git clone https://github.com/Sedrowow/mindustry-client-androidtest.git /tmp/repo
+        cp -r /tmp/repo/* $HOME/android-sdk/cmdline-tools/latest/
         yes | $HOME/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses
       env:
         ANDROID_HOME: ${{ github.workspace }}/android-sdk
