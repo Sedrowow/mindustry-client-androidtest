@@ -1,5 +1,5 @@
 ![Logo](foo.png)
-
+[![Android CI](https://github.com/Sedrowow/mindustry-client-androidtest/actions/workflows/android.yml/badge.svg)](https://github.com/Sedrowow/mindustry-client-androidtest/actions/workflows/android.yml)
 [![Release Update](../../workflows/Release%20Update/badge.svg)](https://mindustry-antigrief.github.io/mindustry-client)
 [![Tests (Unstable)](../../workflows/Java%20Tests/badge.svg?branch=v7)](https://mindustry-antigrief.github.io/mindustry-client-v7-builds)
 [![Discord](https://img.shields.io/discord/741710208501547161.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/yp9ZW7j)
